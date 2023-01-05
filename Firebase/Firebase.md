@@ -1,3 +1,49 @@
+
+# config
+
+```js
+// firebaseConfig.js
+export default {
+    apiKey: "********",
+    authDomain: "********",
+    databaseURL: "********",
+    projectId: "********",
+    storageBucket: "********",
+    messagingSenderId: "********",
+    appId: "********"
+};
+```
+
+위파일은 git ignore로 설정합니다. 그리고 비밀번호는 따로 전달합니다.
+
+```js
+// firebase
+import firebaseConfig from './firebaseConfig';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const {apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId, measurementId} = firebaseConfig; 
+
+const firebaseConfig = {
+  apiKey,
+  authDomain,
+  projectId,
+  storageBucket, 
+  messagingSenderId, 
+  appId, 
+  measurementId,
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+```
+
+firebaseConfig.js가 없으면 인증할 수 없도록 막을 수 있습니다. 그러면서 리포를 공개할 수 있습니다.
+
+
+# 기타
+
 [Firebase – Full Course for Beginners](https://www.youtube.com/watch?v=fgdpvwEWJ9M)
 
 ```js
