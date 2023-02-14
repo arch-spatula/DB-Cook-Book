@@ -16,4 +16,4 @@ DB 다루는 법을 공부하는 리포입니다. 백엔드 리포랑 달라야 
 
 [Supabase in 100 Seconds](https://www.youtube.com/watch?v=zBZgdTb-dns)
 
-
+[15 futuristic databases you’ve never heard of](https://www.youtube.com/watch?v=jb2AvF8XzII)
